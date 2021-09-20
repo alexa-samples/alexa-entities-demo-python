@@ -1,0 +1,41 @@
+{
+    "interactionModel": {
+      "languageModel": {
+        "invocationName": "knowledge demo",
+        "intents": [
+          {
+            "name": "AMAZON.CancelIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.HelpIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.StopIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.NavigateHomeIntent",
+            "samples": []
+          },
+          {
+            "name": "CountryKnowledgeIntent",
+            "slots": [
+              {
+                "name": "country",
+                "type": "AMAZON.Country"
+              }
+            ],
+            "samples": [
+              "tell me something about {country}",
+              "what can you tell me about {country}",
+              "what do you know of {country}"
+            ]
+          }
+        ],
+        "types": []
+      }
+    },
+    "version": "1"
+  }
