@@ -73,7 +73,7 @@ class CountryKnowledgeIntentHandler(AbstractRequestHandler):
 
             if response.status_code == 200:
                 entity = response.json()
-                logger.debug(entity)
+                logger.info(entity)
                 if "capital" in entity and "politicalLeader" in entity:
                     country = entity["name"][0]["@value"]
                     city = entity["capital"][0]["name"][0]["@value"]
